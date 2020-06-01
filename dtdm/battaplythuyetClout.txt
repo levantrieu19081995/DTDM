@@ -1,0 +1,88 @@
+1. Hiểu thế nào về khái niệm Cơ chế hạ tẩng của đám mây ?
+=>Cơ chế hạ tầng đám mây là nền tảng xây dựng các 
+Các cơ chế cơ sở hạ tầng đám mây là 
+các khối xây dựng nền tảng của môi 
+trường đám mây thiết lập các tạo tác 
+chính để tạo thành cơ sở của kiến ​​trúc 
+công nghệ đám mây cơ bản.
+
+2. Cơ chế nào giúp cô lập các tài nguyên giữa các đám mây ?
+=> Đường biên mạng luận lý (Logical Network Perimeter) 
+cơ chế này đượcđịnh nghĩa như sự cô lập một môi 
+trường mạng với phần còn lạicủa mạng truyền thông. 
+Nó hình thành một đường biên mạng
+luận lý bao bọc và cô lập một nhóm các tài nguyên CNTT dựa
+trên đám mây mà về mặt vật lý chúng có thể phấn bố phân tán.
+
+3. Hãy giải thích về các thành phần sau trong cơ chế hạ tẩng ảo hóa của đám mây: 
+	- 1. Physical Server: => là Một máy chủ vật lý là một phần của thiết bị mà dữ liệu được lưu trữ và đọc. 
+Điều này có thể được đặt tại chỗ trong phòng máy chủ của bạn hoặc nó có thể 
+được lưu trữ tại một cơ sở (một trung tâm dữ liệu) với một nhà cung cấp đáng tin cậy
+	- 2. Virtual Server: =>là một dạng phần mềm ảo hóa để giả lập
+các máy chủ vật lý. Các máy chủ ảo thường được các nhà cung cấp
+đám mây sử dụng để chia sẻ máy chủ vật lý cho nhiều người tiêu dùng đám mây 
+bằng cách cấp cho mỗi người một thể hiện toán đám mâyn (instance) của máy chủ ảo.
+	- 3. Virtualization Platform: => là nền tảng ảo hóa -  phần mềm được thực thi trên các máy ảo nó được tách ra khỏi tài nguyên phần cứng cơ bản
+	- 4. Hypervisor: =>là phần mềm giám sát máy ảo - là một chương trình phần mềm quản lý một
+hoặc nhiều máy ảo (VM). nó được sử dụng để tạo, startup, dừng và reset lại các máy ảo.
+các hypervisor cho phép mỗi VM hoặc "guest" truy cập vào lớp tài nguyên phần cứng vật lý bên dưới, chẳng hạn nhue CPU, RAM và lưu trữ. Nó cũng 
+có thể giới hạn số lượng tài nguyên hệ thống mà mỗi máy ảo có thể sử dụng
+để đảm bảo cho nhiều máy ảo cùng sử dụng đồng thời trên một hệ thống.
+- 5. VIM: =>Quản lý tập trung các tài nguyên CNTT được ảo hóa và dựa trên một moodun quản lý tập trung, thực thi trên một máy chủ tận h
+
+4.Hãy giải thích các bước sẽ thực hiện để tạo một máy chủ ảo trên portal của một đám mây?
+	Bước 1: Bản sao VM image được tạo ra trong thiết bị lưu trữ đám mây do người dùng điều khiển.
+	Bước 2: Người đùng đám mây sử dụng cổng quản trị và sử dụng (portal) để khởi tạo máy chủ ảo.
+	Bước 3: Tương tác với VIM để tạo instance của máy chủ ảo thông qua phần cứng cơ bản.
+	Bước 4: Người dùng có thể sử dụng hoặc tùy chỉnh máy chủ ảo thông qua các tính năng khác có trên cổng quản trj và sử dụng (portal).
+	Bước 5: Máy chủ ảo được tạo ra dựa trên VM image.
+
+5.Hãy giải thích các đơn vị luận lý có thể có trên các thiết lưu trữ dữ liệu mạng.
+=> các cơ chế thiết bị lưu trữ đám mây cung cấp các đơn vị luận lý lưu trữ dữ liệu như sau:
+	- Tập tin (file): Tập hợp dữ liệu được nhóm lại thành lập các tập tin (file) mà chúng được tổ chức trong các thư mục.
+	- Khối (Blocks): Là mức lưu trữ thấp nhất cà gần với các thiết bị phần cứng. Một khối là một đơn vị dữ liệu nhơ nhất mà có thể truy cập độc lập được.
+	- Bộ dữ liệu (record): Bộ dữ liệu được tổ chức trong các định dạng  theo bảng(table) và các mẫu tin(record).
+	- Đối tượng (Objects): Dữ liệu và các siêu dữ liệu (metadata) liên quan được nhóm lại thành những tài nguyên dựa trên nền web.
+	mỗi một mức lưu trữ dữ liệu có một vài kiểu giao diện kỹ thuật (interface) đẻ truy cập tương  ứng với loại thiết bị lưu trữ đám mây hay API được một dịch vụ đám mây công bố.
+
+6.	Hãy giải thích khái niệm giao diện lưu trữ mạng là gì? Có các chuẩn giao diện lưu trữ mạng phổ biến nào?
+Lưu trữ mạng (SAN) là một kiến trúc gắn kết các thiết bị lưu trữ bên ngoài (như dãy đĩa, thư viện băng từ và các thư viện ổ quang) tới các máy chủ theo cách mà đối với hệ điều hành, các thiết bị lưu trữ này xuất hiện giống như các thiết bị lắp trong.
+Bao gồm các thiết bị tuân theo các giao thức công nghiệp như SCSI cho lưu trữ khối và SMB (Server Message Block), CIFS (Common Internet File System), NFS (Network File System) cho lưu trữ mạng.
+
+
+7. Hãy giải thích các bước sẽ thực hiện để cấp phát 1 thiết bị lưu trữ mạng thông qua portal của một đám mây.
+=> - Chủ sở hửu đám mây sử dụng quyền quản trị để yêu cầu việc cấp phát thiết bị lưu trữ mạng lên phần mềm lưu
+trữ đám mây.
+- Các thiết bị lưu trữ vật lý được ảo hóa thành các thiết bị lưu trữ ảo nhờ vào nền tảng ảo hóa(VMP). Sau đó phần mềm
+lưu trữ đám mây cấp phát 1 thiết bị lưu trữ đám mây dựa trên đơn vị lưu trữ đối tượng từ các thiết bị lưu trữ ảo ban nảy.
+- Chủ sở  hữu tùy chỉnh cấu hình thiết bị lưu trữ mạng thông qua quyền quản trị bằng giao diện.
+
+8. Vai trò của bộ theo dõi sử dụng đám mây là gì ? 
+Có các loại Bộ theo dõi sử dụng đám mây nào ?
+=> là một phần mềm nhẹ, độc lập chịu trách nhiệm cho việc 
+thu thập và xử lý dữ liệu sử dụng tài nguyên cntt
+- các loại bộ theo dõi sau: tác nhân theo dõi(mionitor Agent),tác nhân tài nguyên (resource agent), tác nhân truy vấn (polling Agent).
+
+9. Nhân bản là gì ? Tại sao cần thực hiện cơ chế nhân bản ?
+=> Nhân bản là việc tạo ra nhiều thể hiện của một tài nguyên. 
+- Được thực hiện khi khi khả năng sẳn dùng và hiệu năng của tài nguyên cần được cải thiện
+
+10. Môi trường sẵn dùng là gì ?
+=> Môi trường sẵn dùng là thành phần cơ bản trong các mô hình đám
+mây cung cấp dịch vụ PaaS, đó là một nền tảng dựa trên đám mây
+bao gồm một tập hợp các tài nguyên CNTT đã được cài đặt, sẵn
+dùng và điều chỉnh bởi người tiêu dùng đám mây, ví dụ như cơ sở
+dữ liện toán đám mâyu, phần mềm trung gian (middleware), các công cụ phát triển
+và các công cụ quản lý.
+
+
+
+
+
+
+
+
+
+
+
+

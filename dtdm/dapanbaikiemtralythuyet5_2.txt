@@ -1,0 +1,52 @@
++1. Hiểu thế nào về khái niệm Cơ chế hạ tẩng của đám mây ?
+aws:
+
+2. Cơ chế nào giúp cô lập các tài nguyên giữa các đám mây ?
+aws: Đường biên mạng luận lý
+
+3. Hãy giải thích về các thành phần sau trong cơ chế hạ tẩng ảo hóa của đám mây:
+	 1. Physical Server 
+	 2. Virtual Server; 
+	 3. Virtualization Platform; 
+	 4. Hypervisor;
+	 5. VIM ?
+aws: 
+1.Physical Server : 
+Gồm các máy chủ có năng lực mạnh mẽ để đáp ứng đủ các nhu cầu điện toán (CPU, memory, network, IO...)
+ cho hệ thống các máy trạm là các máy ảo.
+2.Virtual Server:
+là một dạng phần mềm ảo hóa để giả lập các máy chủ vật lý. Các máy chủ ảo thường được các nhà cung cấp đám mây sử dụng để chia sẻ máy
+chủ vật lý cho nhiều người tiêu dùng đám mây bằng cách cấp cho mỗi người một thể hiện toán đám mâyn (instance) của máy chủ ảo.
+3. Virtualization Platform:
+là trình giả lập và trình ảo hóa, là các gói phần mềm mô phỏng toàn bộ máy tính vật lý, thường cung cấp nhiều máy ảo trên một nền tảng vật lý
+4. Hypervisor:
+Là một chương trình phần mềm quản lý một hoặc nhiều máy ảo (VM). Nó được sử dụng để tạo, startup, dừng và reset lại các máy ảo. 
+Các hypervisor cho phép mỗi VM hoặc “guest” truy cập vào lớp tài nguyên phần cứng vật lý bên dưới, chẳng hạn như CPU, RAM và lưu trữ.
+5. VIM:
+Trình quản lý cơ sở hạ tầng ảo hóa (VIM) trong triển khai Ảo hóa chức năng mạng (NFV) quản lý tài nguyên phần cứng và
+ phần mềm mà nhà cung cấp dịch vụ sử dụng để tạo chuỗi dịch vụ và cung cấp dịch vụ mạng cho khách hàng. 
+----------------------------------------------------------------------------------------------------------------------------------------------
++4. Hãy giái thích các bước sẽ thực hiện để tạo một máy chủ ảo trên portal của một đám mây ?
+aws
++5. Hãy giải thích các đơn vị luận lý có thể có trên các thiết lưu trữ dữ liệu mạng.
+aws
++6. Hãy giải thích khái niệm giao diện lưu trữ mạng là gì ? Có các chuẩn giao diện lưu trữ mạng phổ biến nào ?
+aws
++7. Hãy giải thích các bước sẽ thực hiện để cấp phát một thiết bị lưu trữ mạng thông qua portal của một đám mây.
+aws
+8. Vai trò của bộ theo dõi sử dụng đám mây là gì ? Có các loại Bộ theo dõi sử dụng đám mây nào ?
+aws:
+Vai trò của bộ theo dõi sử dụng đám mây là : chịu trách nhiệm cho việc thu thập và xử lý dữ liệu sử dụng tài nguyên CNTT.
+Các Bộ theo dõi: Monitor Agent, Resource Agent, Poling Agent
+
+9. Nhân bản là gì ? Tại sao cần thực hiện cơ chế nhân bản ?
+aws:
+-Được định nghĩa như là việc tọa ra nhiều thể hiện của cùng 1 tài nguyên.
+-được thực hiện khi khả năng sẵn dùng và hiệu năng của tài nguyên cần được cải thiên
+
+10. Môi trường sẵn dùng là gì ?
+aws:Môi trường sẵn dùng là thành phần cơ bản trong các mô hình đám mây cung cấp 
+ dịch vụ PaaS, đó là một nền tảng dựa trên đám mây bao gồm một tập hợp các 
+ tài nguyên CNTT đã được cài đặt, sẵn dùng và điều chỉnh bởi người tiêu dùng đám mây, 
+ ví dụ như cơ sở dữ liện toán đám mây, phần mềm trung gian (middleware),
+ các công cụ phát triển và các công cụ quản lý
