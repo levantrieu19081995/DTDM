@@ -1,0 +1,56 @@
+export http_proxy=http://cache-st.ctu.edu.vn:3128
+export https_proxy=http://cache-st.ctu.edu.vn:3128    
+1  ping 8.8.8.8
+    2  exit
+    3  sudo apt update
+    4  sudo nano /etc/environment
+    5  sudo nano /etc/apt/apt.conf.d/proxy.conf
+    6  sudo nano /etc/hosts
+    7  sudu apt update
+    8  sudo apt update
+    9  sudo apt-get -y install apache2
+   10  sudo apt install php libapache2-mod-php
+   11  cd ~
+   12  ls
+   13  cd /var
+   14  ls
+   15  cd www
+   16  ls
+   17  cd html
+   18  ls
+   19  sudo nano setup.php
+   20  sudo systemctl restart apacheche2
+   21  sudo systemctl restart apache2.service 
+   22  sudo nano setup.php
+   23  sudo apt-get install php-mysql
+   24  sudo systemctl restart apache2.service 
+   25  sudo nano setup.php
+   26  cd ~
+   27  ls
+   28  cd /var/www/html
+   29  ls
+   30  sudo nano setup.php
+   31  sudo systemctl restart apache2.service 
+   32  sudo nano setup.php
+   33  sudo systemctl restart apache2.service 
+   34  sudo nano setup.php
+   35  sudo systemctl restart apache2.service 
+   36  sudo nano setup.php
+   37  sudo systemctl restart apache2.service 
+   38  sudo nano setup.php
+   39  sudo systemctl restart apache2.service
+   40  sudo apt update
+   41  sudo nano setup.php
+   42  sudo systemctl restart apache2.service
+   43  sudo nano setup.php
+   44  sudo systemctl restart apache2.service
+   45  sudo nano setup.php
+   46  sudo systemctl restart apache2.service
+   47  sudo nano setup.php
+   48  history
+   49  history > history.txt
+   50  sudo history > history.txt
+   51  ls
+   52  cd ~
+   53  sudo history > history.txt
+   54  history > history.txt
