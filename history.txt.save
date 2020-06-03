@@ -1,3 +1,4 @@
+trieu
 export http_proxy=http://cache-st.ctu.edu.vn:3128
 export https_proxy=http://cache-st.ctu.edu.vn:3128    
 1  ping 8.8.8.8
